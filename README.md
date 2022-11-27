@@ -1,146 +1,80 @@
-# 🏗️ Boilerplate for Nuxt, Tailwind & NetlifyCMS
+<p align="center">
+<img src="https://user-images.githubusercontent.com/11247099/140462375-7b7ac4db-35b7-453c-8a05-13d8d20282c4.png" width="600"/>
+</p>
 
-[![Netlify Status](https://api.netlify.com/api/v1/badges/cb2d4cc5-8a65-4940-81ce-4456ff96e6db/deploy-status)](https://app.netlify.com/sites/ntn-boilerplate/deploys) ← replace with [your own](https://app.netlify.com/sites/YOUR_NETLIFY_SITE_SLUG/settings/general#deploy-status-badge)
+<h2 align="center">
+<a href="https://github.com/antfu/vitesse">Vitesse</a> for Nuxt 3
+</h2><br>
 
-**[Live Demo](https://ntn-boilerplate.netlify.app/)**
+<pre align="center">
+🧪 Working in Progress
+</pre>
 
-An opinionated starter template for a quick start with the following technologies up on a site after only 5 minutes!
+<p align="center">
+<br>
+<a href="https://vitesse-nuxt3.netlify.app/">🖥 Online Preview</a>
+<br><br>
+<a href="https://stackblitz.com/github/antfu/vitesse-nuxt3"><img src="https://developer.stackblitz.com/img/open_in_stackblitz.svg" alt=""></a>
+</p>
 
-![ntn-boilerplate-preview-dark](https://user-images.githubusercontent.com/770560/109560601-5dcc5c80-7adc-11eb-9eb8-98663294b6aa.png)
+## Features
 
-## 🔋 Batteries included
+- [💚 Nuxt 3](https://v3.nuxtjs.org) - SSR, ESR, File-based routing, components auto importing, modules, etc.
 
-- Nuxt.js (in "universal mode", where both SEO and speed is great)
-- Vue 2
-- Vuex (supported by adding to `/store`, but not implemented)
-- PostCSS (no SCSS)
-- Tailwind
-- PurgeCSS (removes unused CSS-selectors)
-- Dark mode & ColorModePicker (Set to "dark mode first")
-- PWA (install website as standalone app)
-- Netlify CMS (no need for a separate server)
-- Prettier
-- Nuxt-content (w/ exensible support for markdown and code-blocks)
+- ⚡️ Vite - Instant HMR
 
-##### Optional extra setup
-- Git LFS (store uploaded images outside the main repo)
-- Netlify LM (Netlify’s Git LFS support)
+- 🎨 [UnoCSS](https://github.com/antfu/unocss) - The instant on-demand atomic CSS engine.
 
-## 🎉 Getting Started
+- 😃 Use icons from any icon sets in Pure CSS, powered by [UnoCSS](https://github.com/antfu/unocss)
 
-Use the deploy button to get your own copy of the repository.
+- 🔥 The `<script setup>` syntax
 
-[![Deploy to Netlify](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/Knogobert/ntn-boilerplate&stack=cms)
+- 🍍 [State Management via Pinia](https://pinia.esm.dev), see [./composables/user.ts](./composables/user.ts)
 
-This will setup everything needed for running the CMS:
- - A new repository in your GitHub account with the code
- - Full Continuous Deployment to Netlify's global CDN network
- - Control users and access with Netlify Identity
- - Manage content with Netlify CMS and Nuxt-content
+- 📑 [Layout system](./layouts)
 
-Once the initial build finishes, you can invite yourself as a user. Go to the Identity tab in your new site, click "Invite" and send yourself an invite. Start with by registering a regular email-account (not OAuth yet!) with a [generated password](https://passwordwolf.com/).
+- 📥 APIs auto importing - for Composition API, VueUse and custom composables.
 
-You should be up and running, ready for personalization!
+- 🏎 Zero-config cloud functions and deploy
 
-### These extra steps are only necessary if you want to upload large media in Netlify CMS:
-This way it doesn't clutter up your repo with large unmanageable files. But *do know* that it is easier to add later than undoing it later.
+- 🦾 TypeScript, of course
 
-1. **[Install git-lfs](https://git-lfs.github.com/)** on your computer and remove the `#` in the project's `.gitattributes`
+## Plugins
 
-2. **Setup Netlify LM** by following [these steps](https://docs.netlify.com/large-media/setup/). (In short: `netlify plugins:install netlify-lm-plugin` → `netlify lm:install` → `netlify login` → `netlify link` → `netlify lm:setup` → commit the `.lfsconfig` file.)
+### Nuxt Modules
 
----
+- [VueUse](https://github.com/vueuse/vueuse) - collection of useful composition APIs.
+- [ColorMode](https://github.com/nuxt-community/color-mode-module) - dark and Light mode with auto detection made easy with Nuxt.
+- [UnoCSS](https://github.com/antfu/unocss) - the instant on-demand atomic CSS engine.
+- [Pinia](https://pinia.esm.dev/) - intuitive, type safe, light and flexible Store for Vue.
 
-## Project commands
+## IDE
 
-1. 📦 Install dependencies.
+We recommend using [VS Code](https://code.visualstudio.com/) with [Volar](https://github.com/johnsoncodehk/volar) to get the best experience (You might want to disable Vetur if you have it).
 
-```bash
-npm install
-```
+## Variations
 
-2. 🏗 Run the project for local dev. This will start a hot-reloading server at `localhost:3000`.
+- [vitesse](https://github.com/antfu/vitesse) - Opinionated Vite Starter Template
+- [vitesse-lite](https://github.com/antfu/vitesse-lite) - Lightweight version of Vitesse
+- [vitesse-nuxt-bridge](https://github.com/antfu/vitesse-nuxt-bridge) - Vitesse for Nuxt 2 with Bridge
+- [vitesse-webext](https://github.com/antfu/vitesse-webext) - WebExtension Vite starter template
 
-```bash
-npm run dev
-```
+## Try it now!
 
-3. 🌌 Build the app for server-side rendered deployment. See more about **Universal SSR** in the [Nuxt.js docs](https://nuxtjs.org/guide#server-rendered-universal-ssr-).
+### Online
 
-```bash
-npm run build
+<a href="https://stackblitz.com/github/antfu/vitesse-nuxt3"><img src="https://developer.stackblitz.com/img/open_in_stackblitz.svg" alt=""></a>
 
-# And to serve that deployment...
-npm run start
-```
+### GitHub Template
 
-4. ⚡️ Generate a fully pre-rendered static site. See more [in the docs](https://nuxtjs.org/guide#static-generated-pre-rendering-).
+[Create a repo from this template on GitHub](https://github.com/antfu/vitesse-nuxt3/generate).
+
+### Clone to local
+
+If you prefer to do it manually with the cleaner git history
 
 ```bash
-npm run generate
+npx degit antfu/vitesse-nuxt3 my-nuxt3-app
+cd my-nuxt3-app
+pnpm i # If you don't have pnpm installed, run: npm install -g pnpm
 ```
-
-### Personalize setup
-
-1. Copy and change the .env-file
-
-   - `cp .env-example .env`
-   - Then change the values
-
-2. Change the value on these lines
-
-   - `static/admin/config.yml` — `site_url` & `logo_url`
-   - `content/site/info.json` — `sitename`, `sitedescription` & `sitelang`
-   - `package.json` — `name`, `description`, `author` & `repository.url`
-   - `pages/index.vue` — The start page of your new website!
-
-3. Change colors, favicon, content & content collections
-
-   - Colors are managed in `assets/scss/_vars.scss` & `tailwind.config.js`
-   - Favicon is generated by [@nuxt/pwa](https://pwa.nuxtjs.org/). You should change the `static/icon.png` to something new, and then match the new filename and source in `nuxt.config.js` under `pwa.icon`. Replace the preview.jpg as well.
-   - Content is managed mainly in [local Netlify CMS](http://localhost:3000/admin) by going to your `/admin`, in development mode by double-clicking on a post or by hand in `/content`
-   - Content collections are managed in `static/admin/config.yml`
-
-4. Change font
-
-   1. Add/change your font link in `nuxt.config.js` under `head.link`. You can add a `<link rel="stylesheet" href="font.css">` as `link: [{ rel: 'stylesheet', href: 'font.css' }]`, like [this](https://vue-meta.nuxtjs.org/api/#link)
-   2. Then append your font name in `tailwind.config.js` under `theme.extend.fontFamily.sans` (or other).
-   3. Then if you've uncommented the included netlify plugin "[Subfont](https://github.com/Munter/netlify-plugin-subfont#readme)" in `netlify.toml`, it will automatically post-processes your web page to use an optimal font loading strategy.
-
-## More info
-
-> This project was bootstrapped with `create-nuxt-app`. There are more detailed explanations of how everything works in the [Nuxt.js docs](https://nuxtjs.org).
-
-### Netlify Identity
-
-Make sure to set to "registration invite only" [here](https://app.netlify.com/sites/YOUR_NETLIFY_SITE_SLUG/settings/identity#registration-preferences) if you don't want spam.
-
-When you create your first account, _don’t_ sign up using OAuth, generate a new password and sign in that way locally, otherwise a successful login will send you to the URL you typed in instead of keeping you on localhost.
-
-If you want the Netlify signup emails to work with this boilerplate, you need to either add the 'netlify-identity-widget' to `nuxt.config.js` under `head`, [Follow the advice here](https://answers.netlify.com/t/common-issue-netlify-cms-git-gateway-email-not-confirmed/10690). Or enable the fixed and included email-templates’ paths in Netlify, under [Site Settings > Identity > Emails](https://app.netlify.com/sites/YOUR_NETLIFY_SITE_SLUG/settings/identity) and there you can set `/static/emails/THE_TEMPLATE_NAME.html` for each template.
-
----
-
-Originally based on [Henry Desroches' nuxt-netlify-cms-starter](https://github.com/xdesro/nuxt-netlify-cms-starter).
-
----
-
-## Troubleshooting
-
-- > I added a CSS class, but it doesn't show
-- It is most likely purged by PurgeCSS, make sure it is whitelisted in `purgeCSS` in `nuxt.config.js`
-
-- > I can’t log in to `/admin` on localhost and use my local git as CMS
-- Open up a new terminal and run `npx netlify-cms-proxy-server`, the login again.
-
-- > I tried logging into/saving in Netlify CMS, but I can't
-- It may be that you haven't [enabled Netlify Identity](https://app.netlify.com/sites/YOUR_NETLIFY_SITE_SLUG/settings/identity) or [setup the Git Gateway](https://app.netlify.com/sites/YOUR_NETLIFY_SITE_SLUG/settings/identity#services) correctly, [check the docs](https://www.netlifycms.org/docs/git-gateway-backend/)
-
-- > I get Netlify emails but can't use them to login etc.
-- It is probably because the 'netlify-identity-widget' is only included in the `/admin`-page. [Follow the advice here](https://answers.netlify.com/t/common-issue-netlify-cms-git-gateway-email-not-confirmed/10690) or enable the included email-templates’ paths in Netlify, under [Site Settings > Identity > Emails](https://app.netlify.com/sites/YOUR_NETLIFY_SITE_SLUG/settings/identity) and there you can set `/static/emails/THE_TEMPLATE_NAME.html` for each template. This will make sure to use the correct links inside the emails. Look at @audetcameron’s [screenshot here](https://github.com/Knogobert/ntn-boilerplate/issues/8#issuecomment-841469850).
-
-- > "This repository is configured for Git LFS but 'git-lfs' was not found on your path."
-- Install git-lfs then run `git lfs install` in project root. Then to download the images, run `git lfs pull`. Or if you don't want to download the files/can't login to the lfs server, run `git lfs install --skip-smudge` instead.
-
-- > I can’t get Git LFS to run correctly on Netlify
-- Make sure that you have in your [Netlify build settings](https://app.netlify.com/sites/YOUR_NETLIFY_SITE_SLUG/settings/deploys#environment-variables), set the environment variable `GIT_LFS_ENABLED` : `true`. Then also make sure that Netlify LM is setup as [their docs](https://docs.netlify.com/large-media/setup/) specify.
